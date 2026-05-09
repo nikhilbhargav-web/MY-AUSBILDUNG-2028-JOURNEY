@@ -16,4 +16,3 @@ else:
     print("Reason: Age 18+ aur 58k EUR/year chahiye")
 
 print("Day 3 Task 1 Done")
-print("17 days left for you bot")
