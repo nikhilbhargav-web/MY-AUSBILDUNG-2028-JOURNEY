@@ -16,4 +16,3 @@ for i in range(1, 11):
 
 print("---------------------------------")
 print("IGL DAY 4 COMPLETE")
-print("Next : Github pe upload")
