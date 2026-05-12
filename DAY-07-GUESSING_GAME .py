@@ -70,7 +70,6 @@ def main():
         
         khelna_hai = play_again()  # Pooch: firse?
     
-    print("Thanks bhai! Kal Day 8 milte 💀")
 
 # ===== GAME START KARO =====
 main()  # Ye line se poora game chalu hota
