@@ -1,9 +1,9 @@
 ---
-### **DAY 8: HIGH SCORE TRACKER** 🛒
+### **DAY 9: STUDENT GRADE CALCULATOR** 🔁
 
-**GOAL:** Lists master karna - append, sort, loop  
-**PROJECT:** Guessing game with score history  
-**CONCEPTS:** `list`, `append()`, `sort()`, `min()`, `max()`, `len()`, `for loop`  
-**SAP LINK:** ABAP mein INTERNAL TABLE same kaam karta  
+**GOAL:** for loop + list combo master karna
+**PROJECT:** Class marks ka total, average, pass/fail, topper
+**CONCEPTS:** `for item in list`, `for i in range()`, `len()`, `if inside loop`
+**SAP LINK:** ABAP mein LOOP AT itab...ENDLOOP same kaam
 
-**CODE:** [DAY-08-HIGH-SCORE.py](./DAY-08-HIGH-SCORE.py)
+**CODE:** [DAY-09-GRADE_CALCULATOR.py](./DAY-09-GRADE_CALCULATOR.py)
