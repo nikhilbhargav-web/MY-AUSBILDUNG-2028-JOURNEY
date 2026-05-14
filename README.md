@@ -1,9 +1,9 @@
 ---
-### **DAY 9: STUDENT GRADE CALCULATOR** 🔁
+### **DAY 10: IGL CHATBOT v2.0** 🔁
 
-**GOAL:** for loop + list combo master karna
-**PROJECT:** Class marks ka total, average, pass/fail, topper
-**CONCEPTS:** `for item in list`, `for i in range()`, `len()`, `if inside loop`
-**SAP LINK:** ABAP mein LOOP AT itab...ENDLOOP same kaam
+**GOAL:** while loop + break + continue master karna  
+**PROJECT:** Menu wala chatbot, stats counter, exit system  
+**CONCEPTS:** `while True`, `break`, `continue`, `datetime`  
+**SAP LINK:** ABAP mein WHILE...ENDWHILE same logic  
 
-**CODE:** [DAY-09-GRADE_CALCULATOR.py](./DAY-09-GRADE_CALCULATOR.py)
+**CODE:** [DAY-10-IGL-CHATBOT.py](./DAY-10-IGL-CHATBOT.py)
