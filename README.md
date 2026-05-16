@@ -1,9 +1,9 @@
 ---
-### **DAY 10: IGL CHATBOT v2.0** 🔁
+### **DAY 11: IGL SMART PHONEBOOK** 📞
 
-**GOAL:** while loop + break + continue master karna  
-**PROJECT:** Menu wala chatbot, stats counter, exit system  
-**CONCEPTS:** `while True`, `break`, `continue`, `datetime`  
-**SAP LINK:** ABAP mein WHILE...ENDWHILE same logic  
+**GOAL:** Dictionary {key:value} + methods master karna
+**PROJECT:** Add/Search/Delete contacts, while loop menu
+**CONCEPTS:** `dict`, `.keys()`, `.values()`, `.get()`, `.items()`
+**SAP LINK:** ABAP mein STRUCTURE & WORK AREA same logi
 
-**CODE:** [DAY-10-IGL-CHATBOT.py](./DAY-10-IGL-CHATBOT.py)
+**CODE:** [DAY-11-IGL-PHONEBOOK.py](./DAY-11-IGL-PHONEBOOK.py)
