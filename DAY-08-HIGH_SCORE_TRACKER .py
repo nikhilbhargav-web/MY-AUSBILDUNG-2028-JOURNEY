@@ -1,11 +1,7 @@
-# IGL AUSBILDUNG 2028 - DAY 8
-# PROJECT: HIGH SCORE TRACKER
-# GOAL: List banana, append karna, loop se print karna
-
 import random
 
-# ===== GLOBAL LIST - Sab guesses yahan save honge =====
-all_guesses = []  # Khali thaila shopping ke liye
+
+all_guesses = [] 
 secret_number = 0
 attempts = 0
 
@@ -14,15 +10,15 @@ def game_start():
     global secret_number, attempts, all_guesses
     secret_number = random.randint(1, 100)
     attempts = 0
-    all_guesses = []  # Har naye game mein thaila khali
-    print("----- IGL HIGH SCORE TRACKER -----")
+    all_guesses = []  
+    print("----- HIGH SCORE TRACKER -----")
     print("Maine 1-100 number socha. Sab guess save honge!")
 
 def check_guess(guess):
     """Guess check + List mein daal do"""
     global attempts, all_guesses
     attempts += 1
-    all_guesses.append(guess)  # Guess ko thaila mein daal diya
+    all_guesses.append(guess) 
     
     if guess < secret_number:
         print("Chota hai ⬆️")
@@ -31,18 +27,18 @@ def check_guess(guess):
         print("Bada hai ⬇️")
         return False
     else:
-        print(f"SAHI! {secret_number} tha 🎉")
+        print(f"SAHI! {secret_number} tha ")
         print(f"Total attempts: {attempts}")
-        show_all_guesses()  # Sab guesses dikhao
+        show_all_guesses() 
         return True
 
 def show_all_guesses():
     """List ke sab item print karo"""
     print("\n----- TERE SAB GUESSES -----")
     print(f"Tune ye number try kiye: {all_guesses}")
-    print(f"Sabse chota guess: {min(all_guesses)}")  # List ka min
-    print(f"Sabse bada guess: {max(all_guesses)}")   # List ka max
-    all_guesses.sort()  # Chote se bada sort kar do
+    print(f"Sabse chota guess: {min(all_guesses)}") 
+    print(f"Sabse bada guess: {max(all_guesses)}")   
+    all_guesses.sort() 
     print(f"Sort karke: {all_guesses}")
     print("--------------------------------")
 
@@ -58,7 +54,7 @@ def get_user_input():
         except ValueError:
             print("Number daal, text nahi")
 
-# ===== MAIN GAME =====
+
 def main():
     game_start()
     jeet_gaya = False
@@ -67,7 +63,7 @@ def main():
         user_guess = get_user_input()
         jeet_gaya = check_guess(user_guess)
     
-    print("Game Over! 💀")
+    print("Game Over! ")
 
-# ===== GAME START =====
+
 main()
