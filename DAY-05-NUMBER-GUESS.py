@@ -1,13 +1,9 @@
-# IGL AUSBILDUNG 2028 - DAY 5
-# GOAL: SAP AUSBILDUNG IN GERMANY 2028
-# PROJECT: NUMBER GUESSING GAME
-
 import random
 
-print("----- IGL NUMBER GUESSING GAME -----")
+print("----- NUMBER GUESSING GAME -----")
 print("main 1 se 100 tak ek number soch rha hu...")
 
-#computer secret no. choose karega
+
 secret_number = random.randint(1, 100)
 attempts = 0
 
