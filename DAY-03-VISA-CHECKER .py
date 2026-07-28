@@ -1,5 +1,4 @@
-# IGL Day 3 - Task 1
-print("=== IGL GERMANY VISA CHECKER ===")
+print("=== GERMANY VISA CHECKER ===")
 
 name = input("Tera naam: ")
 age = int(input("Teri age: "))
@@ -15,4 +14,4 @@ else:
     print("Result: Abhi ruk ja IGL")
     print("Reason: Age 18+ aur 58k EUR/year chahiye")
 
-print("Day 3 Task 1 Done")
+print("Day 3 Task Done")
