@@ -9,7 +9,7 @@ yearly = salary * 12
 print("Yearly Salary:", yearly, "EUR")
 
 if age >= 18 and yearly >= 58000:
-    print("Result: Bhai tu Germany ja sakta 🇩🇪")
+    print("Result: Bhai tu Germany ja sakta hai")
     print("EU Blue Card Approved ✅")
 else:
     print("Result: Abhi ruk ja IGL")
