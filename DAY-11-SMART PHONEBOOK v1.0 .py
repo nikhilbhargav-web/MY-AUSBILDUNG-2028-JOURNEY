@@ -1,9 +1,3 @@
-# IGL AUSBILDUNG 2028 - DAY 11
-# PROJECT: IGL SMART PHONEBOOK v1.0
-# GOAL: Dictionary {key:value} + methods master karna
-
-# ===== GLOBAL DATA - DICTIONARY =====
-# Structure: {name: [phone, city, sap_skill]}
 igl_contacts = {
     "nikhil": ["9876543210", "Jaipur", "Python"],
     "rohit": ["8765432109", "Leipzig", "SAP ABAP"],
@@ -28,20 +22,20 @@ def search_contact(name):
         details = igl_contacts[name]
         return f"Found: {name.title()}\nPhone: {details[0]}\nCity: {details[1]}\nSAP Skill: {details[2]}"
     else:
-        return f"{name.title()} phonebook mein nahi hai 😅"
+        return f"{name.title()} phonebook mein nahi hai "
 
 def add_contact(name, phone, city, skill):
     """Naya contact jodo"""
     name = name.lower()
     igl_contacts[name] = [phone, city, skill]
-    return f"{name.title()} add ho gaya ✅"
+    return f"{name.title()} add ho gaya "
 
 def delete_contact(name):
     """Contact delete karo"""
     name = name.lower()
     if name in igl_contacts:
-        del igl_contacts[name] # dict se hatao
-        return f"{name.title()} delete ho gaya 🗑️"
+        del igl_contacts[name] 
+        return f"{name.title()} delete ho gaya "
     else:
         return "Contact mila hi nahi bhai"
 
@@ -51,52 +45,52 @@ def show_all():
         return "Phonebook khali hai 📭"
 
     result = "----- ALL IGL CONTACTS -----\n"
-    for name, details in igl_contacts.items(): #.items() important
+    for name, details in igl_contacts.items(): 
         result += f"{name.title()}: {details[0]} | {details[1]} | {details[2]}\n"
     return result
 
-# ===== MAIN PROGRAM - WHILE LOOP =====
+
 def main():
     print("----- IGL SMART PHONEBOOK v1.0 DICT WALA -----")
 
-    while True: # Day 10 ka while use
+    while True: 
         show_menu()
         choice = input("IGL Choice daal 1-6: ")
 
-        if choice == "1": # Search
+        if choice == "1": 
             name = input("Naam likh: ")
             print(search_contact(name))
 
-        elif choice == "2": # Add
+        elif choice == "2":
             name = input("Naam: ")
             phone = input("Phone: ")
             city = input("City: ")
             skill = input("SAP Skill: ")
             print(add_contact(name, phone, city, skill))
 
-        elif choice == "3": # Delete
+        elif choice == "3": 
             name = input("Kisko delete karna: ")
             print(delete_contact(name))
 
-        elif choice == "4": # Show All
+        elif choice == "4": 
             print(show_all())
 
-        elif choice == "5": # Update Skill
+        elif choice == "5": 
             name = input("Kiska skill update: ").lower()
             if name in igl_contacts:
                 new_skill = input("Naya SAP Skill: ")
-                igl_contacts[name][2] = new_skill # list ka 3rd item
-                print(f"{name.title()} ka skill update ✅")
+                igl_contacts[name][2] = new_skill 
+                print(f"{name.title()} ka skill update ")
             else:
                 print("Contact nahi mila")
 
-        elif choice == "6": # Exit
-            print("Phonebook band. Leipzig 2028 mein milte 🇩🇪")
-            break # Day 10 ka break
+        elif choice == "6":
+            print("Phonebook band. Leipzig 2028 mein milte hai")
+            break 
 
         else:
-            print("Galat choice bhai. 1-6 mein se daal 😅")
-            continue # Day 10 ka continue
+            print("Galat choice bhai. 1-6 mein se daal ")
+            continue 
 
-# ===== PROGRAM START =====
+
 main()
